@@ -1,23 +1,22 @@
-# Phishing para captura de senhas do Facebook
-
-### Ferramentas
-
+# Phishing to Capture Facebook Credentials:
+### Tools:
 - Kali Linux
 - setoolkit
+### Step-by-Step:
+- Root access: ``` sudo su ```
+- Starting setoolkit: ``` setoolkit ```
+- Type of attack: ``` Social-Engineering Attacks ```
+- Attack Vector: ``` Web Site Attack Vectors ```
+- Attack method: ```Credential Harvester Attack Method ```
+- Attack method: ``` Site Cloner ```
+- Getting host address: ``` ifconfig ```
+- URL for clone: http://www.facebook.com
+### Results:
+#### Tests in the Default Browser:
+The first tests done on Brave showed encrypted credentials, probably because the browser is very secure.
 
-### Configurando o Phishing no Kali Linux
+![testPhishingEncrypted](https://github.com/VictorHDS/cibersecurity-desafio-phishing/assets/30830415/5a06534c-9512-45f7-abb5-4fdae70acae2)
+#### Tests in an Alternative Browser:
+I did another test, this time through Microsoft Edge and it worked, this time the prompt displayed the credentials in plain text.
 
-- Acesso root: ``` sudo su ```
-- Iniciando o setoolkit: ``` setoolkit ```
-- Tipo de ataque: ``` Social-Engineering Attacks ```
-- Vetor de ataque: ``` Web Site Attack Vectors ```
-- Método de ataque: ```Credential Harvester Attack Method ```
-- Método de ataque: ``` Site Cloner ```
-- Obtendo o endereço da máquina: ``` ifconfig ```
-- URL para clone: http://www.facebook.com
-
-### Resutados
-Os primeiros testes feitos no Brave apresentaram as credenciais criptografadas, provavelmente pelo navegador ser bem seguro.
-![Alt text](https://drive.google.com/file/d/1wRDqj7Jj-08bZqe9wgn2z7-qS7Rp-tX4/view?usp=drive_link)
-Fiz um outro teste, desta vez pelo Microsoft Edge e funcionou, o Prompt exibiu desta vez as credenciais em texto simples.
-![Alt text](https://drive.google.com/drive/folders/1ktmjXIYXqy6TaS7hbooKgZ0OMLtqErR0)
+![testPhishingWorking](https://github.com/VictorHDS/cibersecurity-desafio-phishing/assets/30830415/6c3d85b5-c786-483f-a625-d5c509cf3eca)
